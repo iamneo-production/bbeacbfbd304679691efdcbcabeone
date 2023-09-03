@@ -10,3 +10,29 @@ body {
   }
   
 /* Enter your styling here */
+h1{
+  margin-bottom: -5px;
+  color: orangered;
+}
+p{
+  margin-bottom: -10px;
+}
+.ui{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row{
+  display: flex;
+}
+.cell{
+  border:none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:24px;
+  text-align: center;
+  cursor: pointer;
+}
