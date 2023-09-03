@@ -93,9 +93,12 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-
+  background-color: rgba(255, 255, 255, 0.681);
+  max-width: 200px;
+  text-align: ;
 }
 .result-container p{
+  
   text-align: center;
   color: black;
 }
@@ -111,8 +114,11 @@ p{
   text-shadow: 2px;
 }
 #reset:hover{
+  border-color: black;
   cursor: pointer;
-  background-color: black;
+  color:black;
+  background-color:white;
+  transition: ease-in;
 }
 #main{
   text-align: center;
