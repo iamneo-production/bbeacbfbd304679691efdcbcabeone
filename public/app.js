@@ -1,7 +1,5 @@
-// Function called whenever user tab on any box
 function myfunc() {
 
-	// Setting DOM to all boxes or input field
 	var b1, b2, b3, b4, b5, b6, b7, b8, b9;
 	b1 = document.getElementById("b1").value;
 	b2 = document.getElementById("b2").value;
@@ -25,9 +23,6 @@ function myfunc() {
 	b7btn = document.getElementById("b7");
 	b8btn = document.getElementById("b8");
 	b9btn = document.getElementById("b9");
-
-	// Checking if Player X won or not and after
-	// that disabled all the other fields
 	if ((b1 == 'x' || b1 == 'X') && (b2 == 'x' ||
 		b2 == 'X') && (b3 == 'x' || b3 == 'X')) {
 		document.getElementById('print')
@@ -150,10 +145,6 @@ function myfunc() {
 		b5btn.style.color = "red";
 		b6btn.style.color = "red";
 	}
-
-	// Checking of Player X finish
-	// Checking for Player 0 starts, Is player 0 won or
-	// not and after that disabled all the other fields
 	else if ((b1 == '0' || b1 == '0') && (b2 == '0' ||
 		b2 == '0') && (b3 == '0' || b3 == '0')) {
 		document.getElementById('print')
@@ -274,8 +265,6 @@ function myfunc() {
 		b6btn.style.color = "red";
 	}
 
-	// Checking of Player 0 finish
-	// Here, Checking about Tie
 	else if ((b1 == 'X' || b1 == '0') && (b2 == 'X'
 		|| b2 == '0') && (b3 == 'X' || b3 == '0') &&
 		(b4 == 'X' || b4 == '0') && (b5 == 'X' ||
@@ -286,8 +275,6 @@ function myfunc() {
 			.innerHTML = "Match Tie";
 	}
 	else {
-
-		// Here, Printing Result
 		if (flag == 1) {
 			document.getElementById('print')
 				.innerHTML = "Player X Turn";
@@ -299,14 +286,13 @@ function myfunc() {
 	}
 }
 
-// Function to reset game
+// Reset
 function myfunc_2() {
 	location.reload();
 	b1 = b2 = b3 = b4 = b5 = b6 = b7 = b8 = b9 = '';
 }
 
-// Here onwards, functions check turn of the player
-// and put accordingly value X or 0
+
 flag = 1;
 function myfunc_3() {
 	if (flag == 1) {

@@ -95,10 +95,11 @@ p{
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.681);
   max-width: 200px;
-  text-align: ;
+  text-align: center;
 }
 .result-container p{
-  
+  font-size: 25px;
+  text-shadow: 2px;
   text-align: center;
   color: black;
 }
