@@ -29,7 +29,7 @@ p{
   display: flex;
   align-items: center;
 }
-.cell{
+.btn{
   border:none;
   width: 80px;
   height: 80px;
@@ -40,7 +40,7 @@ p{
   text-align: center;
   cursor: pointer;
 }
-.cell:active{
+.btn:active{
   outline:none;
 }
 #b1{
@@ -89,10 +89,14 @@ p{
   justify-content: center;
 
 }
+.result-container p{
+  text-align: center;
+  color: black;
+}
 #reset{
   box-sizing: border-box;
-  width: 95px;
-  height:40px;
+  width: 75px;
+  height:75px;
   margin-left: auto;
   border-radius: 8px;
   font-size: 20px;
